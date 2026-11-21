@@ -1,1 +1,3 @@
-export default function Header(){return <header className="header"><div className="wrap nav"><a className="brand" href="/">مؤسسة العقيلة الثقافية الخيرية</a><nav className="navlinks"><a href="/">الرئيسية</a><a href="/about">عن المؤسسة</a><a href="/projects">المشاريع</a><a href="/lectures">المحاضرات</a><a href="/library">المكتبة</a><a href="/contact">اتصل بنا</a></nav></div></header>}
+'use client';
+import {useState} from 'react';
+export default function Header(){const [open,setOpen]=useState(false);return <header className="header"><div className="wrap nav"><a className="brand" href="/">مؤسسة العقيلة الثقافية الخيرية</a><button className="menuBtn" aria-label="القائمة" onClick={()=>setOpen(!open)}>☰</button><nav className={open?'navlinks open':'navlinks'}><a href="/">الرئيسية</a><a href="/about">عن المؤسسة</a><a href="/projects">المشاريع</a><a href="/lectures">المحاضرات</a><a href="/library">المكتبة</a><a href="/contact">اتصل بنا</a></nav></div></header>}
