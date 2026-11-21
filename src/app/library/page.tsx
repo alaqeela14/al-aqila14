@@ -1,0 +1,1 @@
+import Header from '../../components/Header';import Footer from '../../components/Footer';export default function Library(){return <><Header/><section className="pagehero"><div className="wrap"><h1>المكتبة</h1></div></section><main className="section wrap"><div className="card"><p>الكتب والمقالات والملفات الثقافية ستكون متاحة في هذا القسم.</p></div></main><Footer/></>}
