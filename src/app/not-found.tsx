@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="wrap section"><h1>الصفحة غير موجودة</h1><a href="/">العودة إلى الرئيسية</a></main>}
