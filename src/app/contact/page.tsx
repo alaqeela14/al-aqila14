@@ -1,0 +1,1 @@
+import Header from '../../components/Header';import Footer from '../../components/Footer';export default function Contact(){return <><Header/><section className="pagehero"><div className="wrap"><h1>اتصل بنا</h1></div></section><main className="section wrap"><div className="card"><p>سيتم إضافة قنوات التواصل الرسمية للمؤسسة هنا.</p></div></main><Footer/></>}
