@@ -1,0 +1,1 @@
+export default function Footer(){return <footer className="footer"><div className="wrap"><strong>مؤسسة العقيلة الثقافية الخيرية</strong><p>نشر الوعي والمعرفة وخدمة المجتمع.</p><small>© مؤسسة العقيلة الثقافية الخيرية</small></div></footer>}
