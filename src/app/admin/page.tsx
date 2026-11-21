@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,useState} from 'react';
 import {supabase} from '../../lib/supabase';
-type Content={id:string,section:string,title:string,summary:string,body:string,image_url:string|null,published:boolean,created_at:string};
+type Content={id:string,section:string,title:string,summary:string,body:string,image_url:string|null,link_url?:string|null,published:boolean,created_at:string};
 const sections=[{name:'الأخبار',key:'news',icon:'📰',desc:'إضافة الأخبار وتعديلها ونشرها'},{name:'المحاضرات',key:'lectures',icon:'🎙️',desc:'إدارة الفيديوهات والمحاضرات'},{name:'المكتبة',key:'library',icon:'📚',desc:'إدارة الكتب والملفات'},{name:'المشاريع',key:'projects',icon:'🌱',desc:'عرض المبادرات والأنشطة'}];
 export default function AdminPage(){
  const [active,setActive]=useState('الرئيسية');const [section,setSection]=useState('news');const [items,setItems]=useState<Content[]>([]);const [loading,setLoading]=useState(false);const [msg,setMsg]=useState('');
