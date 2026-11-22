@@ -88,3 +88,31 @@
  .legacyHeaderSide{align-items:flex-start;flex-direction:row;justify-content:space-between;flex-wrap:wrap}
  .legacyBrandName{width:min(220px,calc(100vw - 90px))}
 }
+
+
+/* مطابقة رأس الموقع لتنسيق الموقع السابق مع ضبط الصور على الهاتف */
+.site-header{background:linear-gradient(180deg,#143a29,#1a4d2e);color:#fff;position:relative;z-index:50;box-shadow:0 6px 18px rgba(16,45,32,.12)}
+.header-main{padding:18px 0}
+.header-grid{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:18px;align-items:center}
+.brand-image-block{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo-image{display:block;width:58px;height:58px;max-width:58px;max-height:58px;object-fit:contain;flex:0 0 58px}
+.brand-name-image{display:block;width:min(240px,100%);height:auto;max-height:72px;object-fit:contain}
+.header-center{text-align:center}
+.bismillah{color:#e4c66a;font-family:Amiri,serif;font-size:18px;margin-bottom:2px}
+.header-center-note{font-size:11px;color:#d6e1da}
+.header-actions-social{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:10px;min-width:0}
+.header-actions-social .menu-toggle{display:grid;width:40px;height:40px;place-items:center}
+.header-actions-social .socialLinks{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.header-actions-social .socialLinks a{width:36px;height:36px;flex:0 0 36px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.25);color:#ead8a6;background:rgba(255,255,255,.04)}
+.header-actions-social .socialLinks a svg{width:20px;height:20px}
+.nav-wrap{border-top:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.10)}
+.main-nav{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none}
+.main-nav::-webkit-scrollbar{display:none}
+.nav-link{display:block;border:0;background:transparent;color:#e4ebe6;padding:11px 13px;white-space:nowrap;font-size:12px;border-bottom:2px solid transparent}
+.nav-link:hover{color:#fff;border-bottom-color:#c9a227}
+.marquee{background:#10281c;color:#e4c66a;overflow:hidden;border-bottom:1px solid rgba(201,162,39,.2)}
+.marquee-track{display:block;width:max-content;padding:7px 0;font-family:Amiri,serif;font-size:15px;white-space:nowrap;animation:marquee 38s linear infinite}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:900px){.header-grid{grid-template-columns:minmax(0,1fr) auto}.header-center{display:none}.main-nav{display:none;flex-direction:column;align-items:stretch;padding:8px 0 12px;overflow:visible}.main-nav.open{display:flex}.nav-link{width:100%;text-align:right;padding:10px 12px;border-bottom:0;border-inline-start:3px solid transparent}.nav-link:hover{border-inline-start-color:#c9a227;background:rgba(255,255,255,.05)}}
+@media(max-width:680px){.header-main{padding:12px 0}.header-grid{grid-template-columns:minmax(0,1fr) auto;gap:8px}.brand-image-block{gap:7px}.brand-logo-image{width:38px;height:38px;max-width:38px;max-height:38px;flex-basis:38px}.brand-name-image{width:min(180px,calc(100vw - 190px));max-height:52px}.header-actions-social{gap:8px}.header-actions-social .menu-toggle{width:34px;height:34px}.header-actions-social .socialLinks{gap:5px;flex-wrap:nowrap}.header-actions-social .socialLinks a{width:30px;height:30px;flex-basis:30px}.header-actions-social .socialLinks a svg{width:17px;height:17px}.marquee-track{font-size:13px;padding:5px 0}}
+@media(max-width:390px){.header-grid{grid-template-columns:minmax(0,1fr) auto}.brand-name-image{width:min(150px,calc(100vw - 160px))}.header-actions-social .socialLinks{gap:3px}.header-actions-social .socialLinks a{width:27px;height:27px;flex-basis:27px}}
