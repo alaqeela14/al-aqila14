@@ -1,0 +1,2 @@
+import Header from '../../components/Header';import Footer from '../../components/Footer';import PrayerTimes from '../../components/PrayerTimes';import LiveStream from '../../components/LiveStream';
+export default function PrayerLive(){return <><Header/><main><section className="pagehero"><div className="wrap"><h1>مواقيت الصلاة والبث المباشر</h1></div></section><PrayerTimes/><LiveStream/></main><Footer/></>}
