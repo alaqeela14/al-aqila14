@@ -1,0 +1,2 @@
+const links=[{label:'تيليغرام',url:'https://t.me/alaqeela14',symbol:'➤'}];
+export default function SocialLinks(){return <div className="socialLinks" aria-label="حسابات المؤسسة">{links.map(x=><a key={x.label} href={x.url} target="_blank" rel="noopener noreferrer" aria-label={x.label} title={x.label}><span>{x.symbol}</span>{x.label}</a>)}<span className="socialPending">بقية الحسابات قريباً</span></div>}
