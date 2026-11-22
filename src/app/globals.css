@@ -15,3 +15,6 @@
 
 /* استخدام صورة الترويسة الأصلية من الموقع السابق */
 .header{background-color:#12392f;background-image:linear-gradient(90deg,rgba(12,43,34,.82),rgba(12,43,34,.72)),url('https://raw.githubusercontent.com/alaqeela14/Al-Aqila/main/assets/header-bg.jpg');background-size:cover;background-position:center;background-repeat:no-repeat}
+
+/* ضبط ارتفاع الترويسة ليتناسب مع مساحة صورة الترويسة الأصلية */
+.header{min-height:220px;padding:26px 0 20px;background-size:cover;background-position:center}.header .nav{min-height:160px;align-items:center}@media(max-width:760px){.header{min-height:180px;padding:18px 0 14px}.header .nav{min-height:140px;align-items:center}}
